@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./aside.css">
+    <link rel="stylesheet" href="./main.css">
+    <title>Covid19</title>
+</head>
+<body>
+    <aside>
+        <div id="loading" class="load">
+            <div class="sk-chase">
+              <div class="sk-chase-dot"></div>
+              <div class="sk-chase-dot"></div>
+              <div class="sk-chase-dot"></div>
+              <div class="sk-chase-dot"></div>
+              <div class="sk-chase-dot"></div>
+              <div class="sk-chase-dot"></div>
+            </div>
+            <p id="load_msg">読み込み中...</p>
+        </div>
+        <script src="./manace.js"></script>
+        <script>
+        window.onload = function() {
+            if(maintenance === ""){
+                document.getElementById("loading").classList.remove("load");
+                document.getElementById("loading").classList.add("loaded");
+                document.getElementById("load_msg").innerText = "";
+            }else{
+                document.getElementById("load_msg").innerHTML = maintenance;
+            }
+        }
+        </script>
+        <header>
+
+        </header>
+        <div class="side">
+
+        </div>
+    </aside>
+    <main>
+        <p style="font-size: 100px;">load</p>
+    </main>
+
+    <script src="./main.js"></script>
+</body>
+</html>
