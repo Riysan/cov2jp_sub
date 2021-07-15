@@ -1,2 +1,2 @@
-//const maintenance = "";
-const maintenance = "現在メンテナンス中";
+const maintenance = "";
+//const maintenance = "現在メンテナンス中";
